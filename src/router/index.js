@@ -4,14 +4,24 @@ const router = createRouter({
   history: createWebHistory(""),
   routes: [
     {
+      path: "/",
+      name: "main",
+      component: () => import("@/components/foo"),
+    },
+    {
       path: "/singup",
       name: "signup",
-      component: () => import("@/components/SignUp.vue"),
+      component: () => import("@/components/signup"),
     },
     {
       path: "/signin",
       name: "signin",
-      component: () => import("@/components/SignIn.vue"),
+      component: () => import("@/components/signin"),
+    },
+    {
+      path: "/buttons",
+      name: "buttons",
+      component: () => import("@/components/buttons"),
     },
   ],
 });
