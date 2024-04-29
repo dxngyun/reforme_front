@@ -6,8 +6,14 @@
     <div class="logo">
       <img src="../assets/images/logo.png" alt="logo" />
     </div>
-    <input type="text" class="id underline" placeholder="ID" />
-    <input type="text" class="password underline" placeholder="password" />
+    <div class="input">
+      <input type="text" class="id underline" placeholder="ID" />
+      <input type="text" class="password underline" placeholder="password" />
+    </div>
+
+    <div class="submit">
+      <button class="active">제출</button>
+    </div>
   </div>
 </template>
 
@@ -78,5 +84,27 @@ input.underline {
 }
 input.underline:focus {
   outline: none; /* 포커스된 input 요소 주변의 외곽선을 제거합니다. */
+}
+.submit {
+  position: absolute;
+  bottom: 20px; /* 하단으로부터 20px 위에 위치하도록 설정합니다. */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 10px;
+}
+.active {
+  background-color: rgba(46, 72, 45, 1);
+  width: 410px;
+  height: 76px;
+  color: white;
+  font-size: 200%;
+  border-radius: 10px;
 }
 </style>
