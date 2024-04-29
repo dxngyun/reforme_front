@@ -1,6 +1,6 @@
 <template>
-  <router-view />
   <div class="box">
+    <router-view />
     <h1>hello</h1>
     <router-link to="/signin">Go to signin</router-link>
     <br />
@@ -31,12 +31,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  background-color: cadetblue;
 }
 .box {
-  width: 490px;
-  height: auto;
-  justify-content: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* 화면 전체 높이를 채우도록 설정 */
 }
 </style>

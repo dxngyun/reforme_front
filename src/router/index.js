@@ -9,10 +9,11 @@ const router = createRouter({
       component: () => import("@/components/foo"),
     },
     {
-      path: "/singup",
+      path: "/signup",
       name: "signup",
       component: () => import("@/components/signup"),
     },
+
     {
       path: "/signin",
       name: "signin",
